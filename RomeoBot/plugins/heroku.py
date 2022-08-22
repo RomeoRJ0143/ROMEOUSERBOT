@@ -27,17 +27,17 @@ async def restart(event):
             Heroku
         except BaseException:
             return await eor(event, "`HEROKU_API_KEY` is wrong. Re-Check in config vars.")
-        await eor(event, f"✅ **Restarted Dynos** \n**Type** `{hl}ping` **after 1 minute to check if I am working !**")
+        await eor(event, f"✅  \n**🇩𝐘𝐍𝐎𝐒...** `{hl}ping` **🇦𝐅𝐓𝐄𝐑 𝐌𝐈𝐍𝐔𝐓𝐄𝐒 𝐂𝐇𝐄𝐂𝐊 𝐈'𝐌 𝐖𝐎𝐑𝐊𝐈𝐍𝐆..**")
         app = Heroku.apps()[HEROKU_APP_NAME]
         app.restart()
     else:
-        await eor(event, f"✅ **Restarted RomeoBot** \n**Type** `{hl}ping` **after 1 minute to check if I am working !**")
+        await eor(event, f"✅ **🇷𝐄𝐒𝐓𝐀𝐑𝐓...** \n**🇷𝐎𝐌𝐄𝐎𝐁𝐎𝐓** `{hl}ping` **🇦𝐅𝐓𝐄𝐑 𝐌𝐈𝐍𝐔𝐓𝐄𝐒 𝐂𝐇𝐄𝐂𝐊 𝐈'𝐌 𝐖𝐎𝐑𝐊𝐈𝐍𝐆..**")
         await event.client.disconnect()
 
 
 @hell_cmd(pattern="restart$")
 async def re(hell):
-    event = await eor(hell, "Restarting RomeoBot ...")
+    event = await eor(hell, "🇷𝐄𝐒𝐓𝐀𝐑𝐓...")
     try:
         await restart(event)
     except CancelledError:
@@ -48,15 +48,15 @@ async def re(hell):
 
 @hell_cmd(pattern="reload$")
 async def rel(event):
-    await eor(event, "Reloading RomeoBot... Wait for few seconds...")
+    await eor(event, "🇷𝐄𝐋𝐎𝐀𝐃...")
     await reload_RomeoBot()
 
 
 @hell_cmd(pattern="shutdown$")
 async def down(hell):
-    event = await eor(hell, "`Turing Off RomeoBot...`")
+    event = await eor(hell, "`𝐎𝐅𝐅 𝐑𝐎𝐌𝐄𝐎𝐁𝐎𝐓`")
     await asyncio.sleep(2)
-    await event.edit("**[ ⚠️ ]** \n**RomeoBot is now turned off. Manually turn it on to start again.**")
+    await event.edit("**[ ⚠️ ]** \n**𝐒𝐇𝐔𝐓𝐃𝐎𝐖𝐍 𝐑𝐎𝐌𝐄𝐎𝐁𝐎𝐓 𝐒𝐓𝐀𝐑𝐓 𝐌𝐀𝐍𝐔𝐀𝐋𝐋𝐘**")
     if HEROKU_APP is not None:
         HEROKU_APP.process_formation()["worker"].scale(0)
     else:
@@ -129,7 +129,7 @@ async def variable(hell):
     heroku_var = app.config()
     if exe == "get":
         event = await eor(hell, "Getting Variable Info...")
-        cap = "Logger me chala jaa bsdk."
+        cap = "Logger me chala jaa."
         capn = "Saved in LOGGER_ID !!"
         try:
             xvar = hell.pattern_match.group(2).split()[0]

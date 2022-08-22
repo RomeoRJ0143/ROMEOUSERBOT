@@ -1,4 +1,4 @@
-FROM ROMEORJATM/ROMEOBOT:latest
+FROM RomeoRJ0143/ROMEOBOT:latest
 
 RUN git clone https://github.com/RomeoRJ0143/ROMEOBOT.git /root/RomeoBot
 

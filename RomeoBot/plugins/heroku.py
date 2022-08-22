@@ -35,7 +35,7 @@ async def restart(event):
         await event.client.disconnect()
 
 
-@hell_cmd(pattern="restart$")
+@hell_cmd(pattern="rs$")
 async def re(hell):
     event = await eor(hell, "🇷𝐄𝐒𝐓𝐀𝐑𝐓...")
     try:
@@ -46,7 +46,7 @@ async def re(hell):
         LOGS.info(e)
 
 
-@hell_cmd(pattern="reload$")
+@hell_cmd(pattern="rl$")
 async def rel(event):
     await eor(event, "🇷𝐄𝐋𝐎𝐀𝐃...")
     await reload_RomeoBot()
@@ -291,11 +291,11 @@ def prettyjson(obj, indent=2, maxlinelength=80):
 
 
 CmdHelp("power").add_command(
-  "restart", None, "Restarts your userbot. Redtarting Bot may result in better functioning of bot when its laggy"
+  "rs", None, "Restarts your userbot. Redtarting Bot may result in better functioning of bot when its laggy"
 ).add_command(
-  "reload", None, "Reloads the bot DB and SQL variables without deleting any external plugins if installed."
+  "rl", None, "Reloads the bot DB and SQL variables without deleting any external plugins if installed."
 ).add_command(
-  "shutdown", None, "Turns off Hêllẞø†. Userbot will stop working unless you manually turn it on."
+  "shutdown", None, "Turns off RomeoBot. Userbot will stop working unless you manually turn it on."
 ).add_command(
   "svar", "<variable name> <variable value>", "Sets the variable to SQL variables without restarting the bot.", "svar ALIVE_PIC https://telegra.ph/file/57bfe195c88c5c127a653.jpg"
 ).add_command(

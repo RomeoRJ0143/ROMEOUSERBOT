@@ -20,7 +20,7 @@ from telethon.tl.functions.messages import ExportChatInviteRequest
 from RomeoBot.sql.gvar_sql import gvarstat
 from . import *
 
-hell_row = 12
+hell_row = Config.BUTTONS_IN_HELP
 hell_emoji = Config.EMOJI_IN_HELP
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}

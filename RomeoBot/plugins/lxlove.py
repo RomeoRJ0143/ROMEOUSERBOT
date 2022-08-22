@@ -45,6 +45,26 @@ MEDHU = [
     "BHT PYAR KRTA HU TERE SE PLZZ DONT LEAVE ME",
 ]
 
+
+que = {}
+
+
+@hell_cmd(incoming=True)
+async def _(event):
+    global que
+    queue = que.get(event.sender_id)
+    if not queue:
+        return
+    async with event.client.action(event.chat_id, "typing"):
+        await asyncio.sleep(0.3)
+    async with event.client.action(event.chat_id, "typing"):
+        await event.client.send_message(
+            entity=event.chat_id,
+            message="""{}""".format(random.choice(MEDHU)),
+            reply_to=event.message.id,
+        )
+
+
 @hell_cmd(pattern="lxlove(?:\s|$)([\s\S]*)")
 async def _(event):
     global que

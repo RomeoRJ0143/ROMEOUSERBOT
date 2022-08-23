@@ -10,7 +10,7 @@ from RomeoBot.sql.gvar_sql import addgvar, gvarstat
 
 # Creates the logger group on first deploy and adds the helper bot
 async def logger_id(client):
-    desc = "A Bot Logger Group For RomeoBot. DO NOT LEAVE THIS GROUP!!"
+    desc = "𝐑𝐎𝐌𝐄𝐎𝐁𝐎𝐓 𝐋𝐎𝐆𝐆𝐄𝐑 𝐆𝐑𝐎𝐔𝐏 𝐃𝐎 𝐍𝐎𝐓 𝐋𝐄𝐀𝐕𝐄 𝐓𝐇𝐈𝐒 𝐆𝐑𝐎𝐔𝐏"
     new_rights = ChatAdminRights(
         add_admins=True,
         invite_users=True,
@@ -21,11 +21,11 @@ async def logger_id(client):
         manage_call=True,
     )
     try:
-        grp = await client(functions.channels.CreateChannelRequest(title="RomeoBot Logger", about=desc, megagroup=True))
+        grp = await client(functions.channels.CreateChannelRequest(title="🇷𝐎𝐌𝐄𝐎𝐁𝐎𝐓 𝐋𝐎𝐆𝐆𝐄𝐑", about=desc, megagroup=True))
         grp_id = grp.chats[0].id
         grp = await client(functions.messages.ExportChatInviteRequest(peer=grp_id))
         await client(functions.channels.InviteToChannelRequest(channel=grp_id, users=[Config.BOT_USERNAME]))
-        await client(functions.channels.EditAdminRequest(grp_id, Config.BOT_USERNAME, new_rights, "Helper"))
+        await client(functions.channels.EditAdminRequest(grp_id, Config.BOT_USERNAME, new_rights, "𝐑𝐎𝐌𝐄𝐎"))
     except Exception as e:
         LOGS.error(f"{str(e)}")
     if not str(grp_id).startswith("-100"):

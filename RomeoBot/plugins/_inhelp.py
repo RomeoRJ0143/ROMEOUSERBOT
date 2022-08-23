@@ -93,7 +93,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             if a:
                 help_pic = a.split(" ")[0]
             else:
-                help_pic = "https://telegra.ph/file/59b9eba6a5c7801d287d1.jpg"
+                help_pic = "https://telegra.ph/file/a62b9c7d9848afde0569e.jpg"
                 
                 help_msg = f"🌹 **{hell_mention}**\n\n🌹𝐏𝐥𝐮𝐠𝐢𝐧𝐬: `{len(CMD_HELP)}` \n🌹𝐂𝐦𝐝𝐬: `{len(apn)}`\n🌹𝐏𝐚𝐠𝐞: 1/{veriler[0]}"
                 
@@ -146,7 +146,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                         pic_list.append(c)
                 PIC = random.choice(pic_list)
             else:
-                PIC = "https://telegra.ph/file/59b9eba6a5c7801d287d1.jpg"
+                PIC = "https://telegra.ph/file/a62b9c7d9848afde0569e.jpg"
             if PIC and PIC.endswith((".jpg", ".png")):
                 result = builder.photo(
                     PIC,
@@ -185,7 +185,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                         pic_list.append(c)
                 PIC = random.choice(pic_list)
             else:
-                PIC = "https://telegra.ph/file/59b9eba6a5c7801d287d1.jpg"
+                PIC = "https://telegra.ph/file/a62b9c7d9848afde0569e.jpg"
             if PIC and PIC.endswith((".jpg", ".png")):
                 result = builder.photo(
                     file=PIC,
@@ -226,7 +226,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 title="Repository",
                 text=f"**🌹 𝐑𝐨𝐦𝐞𝐨𝐁𝐨𝐭 🌹**",
                 buttons=[
-                    [Button.url("🌹 𝐆𝐑𝐎𝐔𝐏 🌹", "https://t.me/Bot_Updates_Chnl")],
+                    [Button.url("🌹 𝐆𝐑𝐎𝐔𝐏 🌹", "https://t.me/ROMEOBOT_OP")],
                 ],
             )
 
@@ -242,7 +242,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         else:
             result = builder.article(
                 "@Bot_Support_Grp",
-                text="""**𝐇𝐞𝐲 𝐓𝐡𝐢𝐬 𝐢𝐬 [𝐑𝐨𝐦𝐞𝐨𝐁𝐨𝐭](https://t.me/Bot_Support_Grp)**""",
+                text="""**𝐇𝐞𝐲 𝐓𝐡𝐢𝐬 𝐢𝐬 [𝐑𝐨𝐦𝐞𝐨𝐁𝐨𝐭 𝐆𝐑𝐎𝐔𝐏](https://t.me/ROMEOBOT_OP)**""",
                 buttons=[
                     [
                         custom.Button.url("🌹 𝐑𝐨𝐦𝐞𝐨_𝐒𝐭𝐫𝐢𝐧𝐠 🌹", "https://t.me/Rjssgbot"),

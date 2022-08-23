@@ -175,7 +175,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
 
         elif event.query.user_id in auth and query == "pm_warn":
             CSTM_PMP = gvarstat("CUSTOM_PMPERMIT") or "𝐊𝐲𝐚 𝐤𝐚𝐚𝐦 𝐇"
-            HELL_FIRST = "**𝐇𝐞𝐥𝐥𝐨 \n    ❥︎**{} \n\n 𝐰𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐦𝐲 𝐩𝐦**\n\n 😎 𝐃𝐨𝐧𝐭'𝐧 𝐓𝐫𝐲 𝐓𝐨 𝐒𝐩𝐚𝐦 𝐇𝐞𝐫𝐞 😎".format(hell_mention, CSTM_PMP)
+            HELL_FIRST = "𝐇𝐞𝐥𝐥𝐨 \n   𝐰𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 {}'𝐬 𝐩𝐦\n\n 😎 𝐃𝐨𝐧𝐭'𝐧 𝐓𝐫𝐲 𝐓𝐨 𝐒𝐩𝐚𝐦 𝐇𝐞𝐫𝐞 😎".format(hell_mention, CSTM_PMP)
             a = gvarstat("PMPERMIT_PIC")
             pic_list = []
             if a:

@@ -14,7 +14,7 @@ from RomeoBot.version import __hell__ as hellver
 
 hl = Config.HANDLER
 
-HELL_PIC = "https://telegra.ph/file/59b9eba6a5c7801d287d1.jpg"
+HELL_PIC = "https://telegra.ph/file/a62b9c7d9848afde0569e.jpg"
 
 
 # Client Starter

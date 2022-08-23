@@ -384,7 +384,7 @@ async def _(event):
         )
 
 
-@bot.on(admin_cmd(pattern="lxlove(?:\s|$)([\s\S]*)"))
+@bot.on(admin_cmd(pattern="lr(?:\s|$)([\s\S]*)"))
 async def _(event):
     global que
     if event.fwd_from:

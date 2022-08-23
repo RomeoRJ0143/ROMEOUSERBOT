@@ -77,8 +77,8 @@ async def start_msg(client, pic, version, total):
 async def join_it(client):
     if client:
         try:
-            await client(functions.channels.JoinChannelRequest("@Bot_Support_Grp"))
-            await client(functions.channels.JoinChannelRequest("@Bot_Updates_Chnl"))
+            await client(functions.channels.JoinChannelRequest("@ROMEOBOT_OP"))
+            await client(functions.channels.JoinChannelRequest("@ROMEO_OP"))
         except BaseException:
             pass
 

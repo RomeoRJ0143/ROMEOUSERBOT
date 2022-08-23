@@ -68,7 +68,7 @@ class Config(object):
     TMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
     THUMB_IMG = os.environ.get("THUMB_IMG", "./RomeoBot/resources/pics/hellbot_logo.jpg")
     UNLOAD = list(os.environ.get("UNLOAD", "").split())
-    UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO", "https://github.com/ROMEORJATM/ROMEOBOT")
+    UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO", "https://github.com/Romeo-RJ/ROMEOBOT")
     WEATHER_API = os.environ.get("WEATHER_API", None)
 
 

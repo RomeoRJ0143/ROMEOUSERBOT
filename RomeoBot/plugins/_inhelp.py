@@ -51,7 +51,7 @@ def button(page, modules):
     for pairs in pairs[page]:
         buttons.append(
             [
-                custom.Button.inline(f"🔥" + pair + f"🔥", data=f"Information[{page}]({pair})")
+                custom.Button.inline(f"ㅤ✮ㅤ" + pair + f"ㅤ✮ㅤ", data=f"Information[{page}]({pair})")
                 for pair in pairs
             ]
         )
@@ -383,7 +383,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         commands = event.data_match.group(2).decode("UTF-8")
         try:
             buttons = [
-                custom.Button.inline("🌹 " + cmd[0] + " 🌹", data=f"commands[{commands}[{page}]]({cmd[0]})")
+                custom.Button.inline("ㅤ✮ㅤ" + cmd[0] + "ㅤ✮ㅤ", data=f"commands[{commands}[{page}]]({cmd[0]})")
                 for cmd in CMD_HELP_BOT[commands]["commands"].items()
             ]
         except KeyError:

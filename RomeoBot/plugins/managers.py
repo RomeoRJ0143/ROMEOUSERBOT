@@ -50,7 +50,7 @@ async def _(event):
     process = await asyncio.create_subprocess_shell(
         cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
     )
-    OUTPUT = f"**Files in Hêllẞø† DOWNLOADS Folder:**\n"
+    OUTPUT = f"**Files in RomeoBot DOWNLOADS Folder:**\n"
     stdout, stderr = await process.communicate()
     if len(stdout) > Config.MAX_MESSAGE_SIZE_LIMIT:
         with io.BytesIO(str.encode(stdout)) as out_file:
@@ -229,11 +229,11 @@ async def handler(event):
 
 
 CmdHelp("managers").add_command(
-  "ls_local", None, "Gives the list of downloaded medias in your UltronBot server."
+  "ls_local", None, "Gives the list of downloaded medias in your RomeoBot server."
 ).add_command(
-  "ls_root", None, "Gives the list of all files in root directory of UltronBot repo."
+  "ls_root", None, "Gives the list of all files in root directory of RomeoBot repo."
 ).add_command(
-  "ls_saved", None, "Gives the list of all files in Saved directory of your UltronBot server"
+  "ls_saved", None, "Gives the list of all files in Saved directory of your RomeoBot server"
 ).add_command(
   "rnsaved", "from | to", "Renames the file in saved directory"
 ).add_command(
@@ -245,7 +245,7 @@ CmdHelp("managers").add_command(
 ).add_command(
   "ls", "<path name>", "Gives the list of all files in the given path"
 ).add_info(
-  "UltronBot Managers."
+  "RomeoBot Managers."
 ).add_warning(
   "✅ Harmless Module."
 ).add()

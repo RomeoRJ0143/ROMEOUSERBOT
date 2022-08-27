@@ -27,16 +27,16 @@ async def kk(event):
     _o = o.split("\n")
     o = "\n".join(_o)
     OUTPUT = f"""
-<h1>List of Plugins in 𝕽𝖔𝖒𝖊𝖔𝕭𝖔𝖙 :</h1>
+<h1>List of Plugins in RomeoBot :</h1>
 
 <code>{o}</code>
 
 <b><i>HELP:</b></i> <i>If you want to know the commands for a plugin, do “ .plinfo <plugin name> ”
 
-<b><a href='https://t.me/Bot_Support_Grp'>@Bot_Support_Grp</a></b>
+<b><a href='https://t.me/RomeoBot_OP'>@ROMEOBOT_OP</a></b>
 """
-    hell = await telegraph_paste("All available plugins in 𝕽𝖔𝖒𝖊𝖔𝕭𝖔𝖙 Ɠɾօմք", OUTPUT)
-    await eor(event, f"[All available plugins in 𝕽𝖔𝖒𝖊𝖔𝕭𝖔𝖙]({hell})", link_preview=False)
+    hell = await telegraph_paste("All available plugins in RomeoBot", OUTPUT)
+    await eor(event, f"[All available plugins in RomeoBot]({hell})", link_preview=False)
 
 
 @hell_cmd(pattern="send ([\s\S]*)")

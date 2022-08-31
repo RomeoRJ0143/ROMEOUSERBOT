@@ -113,8 +113,8 @@ async def kang(event):
                 pack = 1
                 emoji = splat[1]
 
-        packname = f"UltronBot_{un_}_{pack}"
-        packnick = f"{UltronBot}" if UltronBot else f"{un}'s Hêllẞø† Vol.{pack}"
+        packname = f"RomeoBot_{un_}_{pack}"
+        packnick = f"{RomeoBot}" if RomeoBot else f"{un}'s RomeoBot Vol.{pack}"
         cmd = "/newpack"
         file = io.BytesIO()
 
@@ -147,8 +147,8 @@ async def kang(event):
                     x = await conv.get_response()
                     while "120" in x.text:
                         pack += 1
-                        packname = f"UltronBot_{un_}_{pack}"
-                        packnick = f"{UltronBot}" if UltronBot else f"{un}'s Hêllẞø† Vol.{pack}"
+                        packname = f"RomeoBot_{un_}_{pack}"
+                        packnick = f"{RomeoBot}" if RomeoBot else f"{un}'s RomeoBot Vol.{pack}"
                         cmd = "/newpack"
                         await hell.edit(f"`Switching to Pack {str(pack)} due to insufficient space`")
                         await conv.send_message(packname)
@@ -191,8 +191,8 @@ async def kang(event):
                     await event.client.send_read_acknowledge(conv.chat_id)
 
                 if is_anim:
-                    packname = f"UltronBot_{un_}_{pack}_anim"
-                    packnick = f"{UltronBot}" if UltronBot else f"{un}'s Hêllẞø† Vol.{pack} (Animated)"
+                    packname = f"RomeoBot_{un_}_{pack}_anim"
+                    packnick = f"{RomeoBot}" if RomeoBot else f"{un}'s RomeoBot Vol.{pack} (Animated)"
                     cmd = "/newanimated"
                     await conv.send_message("/addsticker")
                     await conv.get_response()
@@ -244,8 +244,8 @@ async def kang(event):
                     await event.client.send_read_acknowledge(conv.chat_id)
 
                 elif is_vid:
-                    packname = f"UltronBot_{un_}_{pack}_vid"
-                    packnick = f"{UltronBot}" if UltronBot else f"{un}'s Hêllẞø† (Video)"
+                    packname = f"RomeoBot_{un_}_{pack}_vid"
+                    packnick = f"{RomeoBotBot}" if RomeoBot else f"{un}'s RomeoBot (Video)"
                     cmd = "/newvideo"
                     await conv.send_message("/addsticker")
                     await conv.get_response()
@@ -272,8 +272,8 @@ async def kang(event):
             await hell.edit("`Preparing a new pack....`")
             async with event.client.conversation("Stickers") as conv:
                 if not is_anim and not is_vid:
-                    packname = f"UltronBot_{un_}_{pack}"
-                    packnick = f"{UltronBot}" if UltronBot else f"{un}'s Hêllẞø† Vol.{pack}"
+                    packname = f"RomeoBot_{un_}_{pack}"
+                    packnick = f"{RomeoBot}" if RomeoBot else f"{un}'s RomeoBot Vol.{pack}"
                     cmd = "/newpack"
                     await conv.send_message(cmd)
                     await conv.get_response()
@@ -300,8 +300,8 @@ async def kang(event):
                     await event.client.send_read_acknowledge(conv.chat_id)
             
                 if is_anim:
-                    packname = f"UltronBot_{un_}_{pack}_anim"
-                    packnick = f"{UltronBot}" if UltronBot else f"{un}'s Hêllẞø† Vol.{pack} (Animated)"
+                    packname = f"RomeoBot_{un_}_{pack}_anim"
+                    packnick = f"{RomeoBot}" if RomeoBot else f"{un}'s RomeoBot Vol.{pack} (Animated)"
                     cmd = "/newanimated"
                     await conv.send_message(cmd)
                     await conv.get_response()
@@ -331,8 +331,8 @@ async def kang(event):
                     await event.client.send_read_acknowledge(conv.chat_id)
 
                 if is_vid:
-                    packname = f"UltronBot_{un_}_{pack}_vid"
-                    packnick = f"{UltronBot}" if UltronBot else f"{un}'s Hêllẞø† (Video)"
+                    packname = f"RomeoBot_{un_}_{pack}_vid"
+                    packnick = f"{RomeoBot}" if RomeoBot else f"{un}'s RomeoBot (Video)"
                     cmd = "/newvideo"
                     await conv.send_message(cmd)
                     await conv.get_response()
@@ -505,7 +505,7 @@ async def _(event):
     if not rply:
         return await eod(hel_, "`Reply to a stciker to kang that pack.`")
     if hell == "":
-        pname = f"{un}'s Hêllẞø† Pack"
+        pname = f"{un}'s RomeoBot Pack"
     else:
         pname = hell
     if rply and rply.media and rply.media.document.mime_type == "image/webp":
@@ -594,7 +594,7 @@ async def sticklet(event):
     )
 
     image_stream = io.BytesIO()
-    image_stream.name = "UltronBot.webp"
+    image_stream.name = "RomeoBot.webp"
     image.save(image_stream, "WebP")
     image_stream.seek(0)
 

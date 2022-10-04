@@ -16,6 +16,46 @@ hl = Config.HANDLER
 
 HELL_PIC = "https://telegra.ph/file/a62b9c7d9848afde0569e.jpg"
 
+perf = "ROMEOBOT"
+
+async def killer():
+    hell_USER = Config.ALIVE_NAME
+    name = f"{Config.ALIVE_NAME}'s Assistant"
+    description = (
+        f"I am Assistant Of {Config.ALIVE_NAME}.This Bot Can Help U To Chat With My Master"
+    )
+    bot_name = "ROMEO"
+    botname = f"{Config.BOT_USERNAME}"
+    if bot_name.endswith("Assistant"):
+        print("Bot Starting")
+    else:
+        try:
+            await bot.send_message("@BotFather", "/setinline")
+            await asyncio.sleep(1)
+            await bot.send_message("@BotFather", botname)
+            await asyncio.sleep(1)
+            await bot.send_message("@BotFather", perf)
+            await asyncio.sleep(1)
+            await bot.send_message("@BotFather", "/setname")
+            await asyncio.sleep(1)
+            await bot.send_message("@BotFather", botname)
+            await asyncio.sleep(1)
+            await bot.send_message("@BotFather", name)
+            await asyncio.sleep(1)
+            await bot.send_message("@BotFather", "/setdescription")
+            await asyncio.sleep(1)
+            await bot.send_message("@BotFather", botname)
+            await asyncio.sleep(1)
+            await bot.send_message("@BotFather", description)
+            await asyncio.sleep(1)
+            await bot.send_message("@BotFather", "/setuserpic")
+            await asyncio.sleep(1)
+            await bot.send_message("@BotFather", botname)
+            await asyncio.sleep(1)
+            await bot.send_file("@BotFather", "RomeoBot/resources/pics/main.png")
+            await asyncio.sleep(2)
+        except Exception as e:
+            print(e)
 
 # Client Starter
 async def hells(session=None, client=None, session_name="Main"):
@@ -96,4 +136,3 @@ else:
         bot.run_until_disconnected()
     except ConnectionError:
         pass
-

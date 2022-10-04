@@ -62,12 +62,12 @@ async def space_paste(message, extension=None):
 
 async def telegraph_paste(page_title, temxt):
     cl1ent = TelegraphPoster(use_api=True)
-    auth = "[ †he Hêllẞø† ]"
+    auth = "ROMEOBOT"
     cl1ent.create_api_token(auth)
     post_page = cl1ent.post(
         title=page_title,
         author=auth,
-        author_url="https://t.me/Bot_Updates_Chnl",
+        author_url="https://t.me/RomeoBot_OP",
         text=temxt,
     )
     return post_page["url"]

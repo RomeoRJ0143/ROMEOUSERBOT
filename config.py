@@ -1,4 +1,3 @@
-# EDIT THIS FILE AND RENAME TO config.py TO MAKE THIS BOT WORKING
 # FILL THESE VALUES ACCORDINGLY.
 
 from RomeoBot.config.hell_config import Config

@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
 
-# from RomeoBot.config import Config
+# from UltronBot.config import Config
 
 DB_URI = os.environ.get("DATABASE_URL")
 

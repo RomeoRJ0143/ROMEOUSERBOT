@@ -5,7 +5,7 @@ from RomeoBot.config.hell_config import Config
 class Development(Config):
   # get these values from my.telegram.org. 
   APP_ID = 9    # 9 is a placeholder. Fill your 6 digit api id
-  API_HASH = ""   # replace this with your api hash
+  API_HASH = "69"   # replace this with your api hash
 
   # create any PostgreSQL database.
   # I recommend to use elephantsql and paste that link here
